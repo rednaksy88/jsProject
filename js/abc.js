@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Решение алгоритмической задачи</title>
-</head>
-<body>
-
-<!--Уникально содержание страницы-->
-<h1 align="center">Решение алгоритмической задачи</h1>
-<p id="task_content">Дано вещественное число а. Вычислить a**4, при a < 10; x = a при a > 61, в противном случае x = a −
-    sin(a**2))</p>
-<p>Значение a: <span id="a">9</span></p>
-<p id="verify">Кликни, чтобы увидеть ответ</p>
-
-<p><h3>Результат: <span id="result"></span></h3></p>
-
-</body>
-<script src="../js/abc.js"></script>
-</html>
+function verify() {
+  console.log('a')
+  let a = parseInt(elementA.innerText);
+  console.log(a)
+  if (a < 10) {
+    result = Math.pow(a, 4);
+    document.getElementById("result").innerText = result;
+  } else if (a > 61) {
+    result = a;
+    document.getElementById("result").innerText = result;
+  } else {
+    result = a - Math.sin(Math.pow(a, 2));
+    document.getElementById("result").innerText = result;
+  }
+}
+const elementA = document.getElementById("a");
+const elementVerify = document.getElementById("verify");
+elementVerify.addEventListener('click', verify);
