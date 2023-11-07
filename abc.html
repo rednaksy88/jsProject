@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+
+<!--Уникально содержание страницы-->
+<h1 align="center">Решение алгоритмической задачи</h1>
+<p id="task_content">Дано вещественное число а. Вычислить a**4, при a < 10; x = a при a > 61, в противном случае x = a −
+    sin(a**2))</p>
+<p>Значение a: <span id="a">9</span></p>
+<p id="verify">Кликни, чтобы увидеть ответ</p>
+
+<p><h3>Результат: <span id="result"></span></h3></p>
+
+</body>
+<script src="../js/abc.js"></script>
+</html>
