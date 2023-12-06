@@ -35,6 +35,7 @@ body {
     color: #fff;
     transition: color 0.35s linear;
     text-decoration:none;
+    font-size:18px;
 }
 .nav-item:hover {
     color: black;
