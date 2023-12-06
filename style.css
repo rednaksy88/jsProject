@@ -1,69 +1,31 @@
 body {
-    margin:0;
+    margin:0px;
     font-family: 'Open Sans', cursive;
-    font-size:20px;
+}
+.container{
+    max-width:2400px;
+
 }
 .greet {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     min-height: 50px;
 }
 .header {
     background: rgb(255, 99, 71);
-    height: 40px;
+    height: 30px;
     padding: 8px;
 }
 .title{
     font-size:35px;
     font-weight:700;
 }
-@media (max-width:800px){
-    .header{
-    max-width:780px;
-    font-size:18px;
-    padding:12px;
-    max-height:30px;
-    }
-    .title{
-    font-size:30px;
-    }
-}
-@media (max-width:680px){
-    .header{
-    max-width:675px;
-    font-size:15px;
-    padding:10px;
-    max-height:25px;
-    }
-    .form-group label{
-    font-size:12px;
-    }
-    .title{
-    font-size:25px;
-    }
-}
-@media (max-width:575px){
-    .header{
-    max-width:575px;
-    font-size:14px;
-    padding:7px;
-    max-height:20px;
-    }
-    .title{
-    font-size:20px;
-    }
-}
-@media (max-width:470px){
-    .header{
-    max-width:470px;
-    font-size:12px;
-    padding:5px;
-    max-height:15px;
-    }
-    .title{
-    font-size:15px;
-    }
+.title2{
+    font-size:35px;
+    font-weight:700;
+    margin-top:100px;
+    margin-bottom:70px
 }
 .nav {
     display: flex;
@@ -77,18 +39,51 @@ body {
 .nav-item:hover {
     color: black;
 }
-.ph{
-    width:150px;
-    border-radius:25px;
-    background-color: grey;
+.pl_cards {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.pl_card {
+    margin-top: 25px;
+    width: 350px;
+    border: 1px solid red;
+    border-radius: 16px
+}
+
+.players {
+    padding: 10px
+}
+
+.pl-card-wrapper {
+    padding: 10px
+}
+
+.ph img {
+    width: 100%;
+    border-radius: 16px;
+}
+.ph img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.pl_name {
+    text-align: center;
+    margin-top: 10px
+}
+
+.pl_descr {
+    text-align: center;
+    margin-top: 10px
 }
 .voice{
     border:none
     margin-top:100px;
     margin-right:100px;
-}
-.contact h3 {
-    text-align: center;
 }
 .form-group label{
     display: block
@@ -143,4 +138,106 @@ body {
     text-decoration:none;
     border: 1px solid;
     padding: 7px;
+}
+@media (max-width:890px){
+    .header{
+    max-width:890px;
+    font-size:18px;
+    padding:12px;
+    max-height:30px;
+    }
+    .title{
+    font-size:30px;
+    }
+    .title2{
+     font-size:30px;
+    }
+
+}
+@media (max-width:680px){
+    .header{
+    max-width:675px;
+    font-size:15px;
+    padding:10px;
+    max-height:25px;
+    }
+    .form-group label{
+    font-size:12px;
+    }
+    .title{
+    font-size:18px;
+    }
+    .title2{
+     font-size:18px;
+    }
+   .pl_card {
+    margin-top: 12px;
+    }
+
+}
+@media (max-width:575px){
+    .header{
+    max-width:575px;
+    font-size:14px;
+    padding:7px;
+    max-height:20px;
+    }
+    .title{
+    font-size:13px;
+    }
+    .title2{
+     font-size:17px;
+    }
+    .pl_card {
+    margin-top: 14px;
+    }
+
+}
+@media (max-width:480px){
+    .header{
+    max-width:470px;
+    font-size:11px;
+    padding:5px;
+    max-height:15px;
+    }
+    .title{
+    font-size:11px;
+    }
+    .title2{
+     font-size:15px;
+     margin-top:10px;
+     margin-bottom:15px;
+    }
+    .row > .form-group {
+    width:30%;
+    margin-right:20px;
+    .pl_card {
+    margin-top: 14px;
+    }
+}
+}
+@media (max-width:420px){
+    .header{
+    max-width:420px;
+    font-size:9px;
+    padding:4px;
+    max-height:12px;
+    }
+    .title{
+    font-size:10px;
+    }
+    .title2{
+     font-size:14px;
+     margin-top:10px;
+     margin-bottom:10px;
+    .pl_card {
+    margin-top: 12px;
+    }
+}
+    .row > .form-group {
+    width:28%;
+    margin-right:20px;
+    }
+    .pl_card {
+    margin-top: 10px;
 }
